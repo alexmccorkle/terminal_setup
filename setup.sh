@@ -25,5 +25,7 @@ echo "Copying config file..."
 mkdir -p ~/.config/fish
 cp -r fish/* ~/.config/fish/
 
+echo 'set -g fish_user_paths "/opt/homebrew/bin" $fish_user_paths' >> ~/.config/fish/config.fish
+
 echo "Set-up complete. Please restart terminal for a fishy experience!"
 
