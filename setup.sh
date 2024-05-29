@@ -7,9 +7,22 @@ then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+# Updating/Upgrading 
+echo "Updating brew"
+brew update
+
 # Install Fish
 echo "Installing Fish..."
 brew install fish
+
+echo "Installing my faves..."
+brew install git
+brew install tldr
+brew install micro
+brew install tree
+brew install wget
+
+
 
 # Add fish to the list of acceptable shells
 if ! grep -Fxq "/opt/homebrew/bin/fish" /etc/shells
