@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# TODO:
+# Some default mac settings like finder etc. would be cool 
+
 # Install Homebrew if not installed
 if ! command -v brew &> /dev/null
 then
